@@ -9,7 +9,7 @@
 </p>
 
 * React axios;
-* React style para HTML;
+* React style para HTML,CSS;
 
 
 ## Fontes Utilizadas
