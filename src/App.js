@@ -13,11 +13,11 @@ function App() {
     axios.get(`${api.baseURL}?name=${query}`).then((response) => {
       const arr = response.data.country;
       for (var i = 0; i < arr.length; i++) {
-        const name = response.data.country[i].country_id;
+        const nome_pais = response.data.country[i].country_id;
         const prob = response.data.country[i].probability;
 
         for (var x = 0; x < paises.length; x++) {
-          if (paises[x].code === name) {
+          if (paises[x].code === nome_pais) {
             displayResults(paises[x].name, prob.toFixed(3));
           }
         }
